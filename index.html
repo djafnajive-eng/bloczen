@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b1224">
+<title>BlocZen — Jeu de puzzle de blocs gratuit</title>
+<meta name="description" content="Jouez gratuitement à BlocZen : placez des blocs, complétez des lignes, relevez les défis quotidiens et battez votre meilleur score.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://VOTRE-DOMAINE.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BlocZen — Jeu de puzzle de blocs gratuit">
+<meta property="og:description" content="Un puzzle de blocs gratuit, des défis quotidiens et des records à battre.">
+<meta property="og:url" content="https://VOTRE-DOMAINE.com/">
+<meta property="og:image" content="https://VOTRE-DOMAINE.com/og-bloczen.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"WebApplication",
+ "name":"BlocZen",
+ "url":"https://VOTRE-DOMAINE.com/",
+ "applicationCategory":"GameApplication",
+ "operatingSystem":"Any",
+ "browserRequirements":"Requires JavaScript and a modern browser",
+ "description":"Jeu de puzzle de blocs gratuit avec défis quotidiens et records personnels",
+ "offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}
+}
+</script>
+<style>
+:root{color-scheme:dark;--bg:#08101f;--panel:#111d36;--panel2:#172747;--cell:#20365e;--line:#2b416b;--text:#f3f6ff;--muted:#9eafd0;--gold:#ffc857;--cyan:#52d6f4;--green:#4be0a2;--red:#ff7185;--shadow:0 18px 50px #0005}
+html[data-theme="light"]{color-scheme:light;--bg:#edf3ff;--panel:#fff;--panel2:#e6edfb;--cell:#d8e3f7;--line:#c5d2ea;--text:#14213d;--muted:#647493;--gold:#d58a00;--cyan:#008eae;--green:#078d61;--red:#cf4058;--shadow:0 18px 50px #24365b18}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 12% 0%,#23407888,transparent 38%),radial-gradient(ellipse at 90% 85%,#422e6b66,transparent 36%),var(--bg);color:var(--text);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;padding:env(safe-area-inset-top) 14px env(safe-area-inset-bottom)}
+button{font:inherit;border:0;cursor:pointer}button:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}.wrap{max-width:1120px;margin:auto}.top{display:flex;align-items:center;justify-content:space-between;padding:18px 0;gap:12px}.brand{display:flex;align-items:center;gap:11px}.logo{width:43px;height:43px;border-radius:14px;background:linear-gradient(135deg,var(--gold),#ff8757);display:grid;place-items:center;color:#18213a;font-size:24px;font-weight:1000;box-shadow:0 8px 25px #ffc85744}.brand h1{font-size:22px;line-height:1;margin:0;letter-spacing:.4px}.brand small{color:var(--muted)}.top-actions{display:flex;gap:8px}.iconbtn,.tab,.secondary{background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:12px;padding:10px 13px;font-weight:700}.layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(290px,.85fr);gap:18px;align-items:start}.panel{background:linear-gradient(160deg,var(--panel),color-mix(in srgb,var(--panel) 88%,#405d94));border:1px solid var(--line);border-radius:22px;padding:17px;box-shadow:var(--shadow)}.gamehead{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:13px}.eyebrow{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:1.3px;font-weight:800}.score{font-size:34px;line-height:1.05;font-weight:900;color:var(--gold);font-variant-numeric:tabular-nums}.best{text-align:right;color:var(--muted);font-size:12px}.best strong{color:var(--text);font-size:17px}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:10px 0 14px;flex-wrap:wrap}.seg{display:flex;background:var(--bg);border:1px solid var(--line);padding:4px;border-radius:12px;gap:3px}.seg button{background:transparent;color:var(--muted);padding:7px 10px;border-radius:9px;font-size:12px;font-weight:800}.seg button.active{background:var(--gold);color:#18213a}.board{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:5px;padding:9px;background:var(--bg);border:1px solid var(--line);border-radius:17px;aspect-ratio:1;touch-action:manipulation}.cell{min-width:0;border-radius:6px;background:var(--cell);aspect-ratio:1;transition:background .12s,transform .12s;position:relative}.cell.filled{box-shadow:inset 0 -4px 0 #0002,inset 0 2px 0 #fff3}.cell.hint{outline:2px solid var(--cyan);outline-offset:-2px}.cell.boom{animation:pop .22s ease}@keyframes pop{50%{transform:scale(.55);opacity:.4}}.pieces{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:13px}.piece{min-height:94px;border:1px solid var(--line);border-radius:15px;background:var(--panel2);display:grid;place-items:center;padding:8px;touch-action:manipulation}.piece.selected{border:2px solid var(--gold);background:color-mix(in srgb,var(--gold) 12%,var(--panel2))}.piece.used{opacity:.25;pointer-events:none}.mini{display:grid;gap:3px}.mini i{width:clamp(12px,3.2vw,19px);aspect-ratio:1;border-radius:4px;box-shadow:inset 0 -3px 0 #0002,inset 0 2px 0 #fff4}.mini i.empty{visibility:hidden}.hintline{color:var(--muted);font-size:12px;text-align:center;margin:9px 0 0}.side{display:grid;gap:14px}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.stat{background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:12px}.stat b{display:block;font-size:22px}.stat span{font-size:12px;color:var(--muted)}.tabs{display:flex;gap:6px;overflow:auto;padding-bottom:4px}.tab{white-space:nowrap;font-size:12px;padding:9px 12px}.tab.active{background:var(--gold);color:#17213a;border-color:var(--gold)}.section-title{display:flex;justify-content:space-between;align-items:center;margin:0 0 12px}.section-title h2{font-size:16px;margin:0}.muted{color:var(--muted)}.mission{display:flex;gap:10px;align-items:center;padding:11px 0;border-bottom:1px solid var(--line)}.mission:last-child{border:0}.mission-icon{width:37px;height:37px;flex:none;border-radius:12px;background:var(--bg);display:grid;place-items:center;font-size:18px}.mission-main{flex:1;min-width:0}.mission-main b{display:block;font-size:13px}.mission-main small{color:var(--muted)}.progress{height:6px;border-radius:9px;background:var(--bg);overflow:hidden;margin-top:6px}.progress i{display:block;height:100%;background:linear-gradient(90deg,var(--cyan),var(--green));border-radius:9px}.claim{background:var(--gold);color:#18213a;padding:8px 10px;border-radius:9px;font-size:12px;font-weight:900}.claim:disabled{opacity:.35;cursor:default}.reward{display:flex;justify-content:space-between;align-items:center;background:var(--bg);border-radius:13px;padding:12px;margin-top:10px}.primary{background:linear-gradient(135deg,var(--gold),#ff9b50);color:#18213a;font-weight:900;padding:12px 17px;border-radius:13px;box-shadow:0 8px 20px #ffc85725}.secondary{font-size:13px}.ad{max-width:728px;min-height:60px;margin:15px auto;border:1px dashed var(--line);border-radius:12px;display:grid;place-items:center;color:var(--muted);font-size:11px}.content{max-width:850px;margin:30px auto 45px;color:var(--muted)}.content h2{color:var(--text);font-size:21px;margin-top:28px}.content h3{color:var(--text);font-size:16px}.content a{color:var(--cyan)}.footer{border-top:1px solid var(--line);padding:18px 0 30px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.modal{position:fixed;inset:0;background:#050a16d9;z-index:20;display:none;align-items:center;justify-content:center;padding:18px}.modal.show{display:flex}.dialog{width:min(440px,100%);background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:23px;text-align:center;box-shadow:var(--shadow)}.dialog h2{margin:0 0 7px}.dialog .final{font-size:48px;font-weight:1000;color:var(--gold)}.dialog p{color:var(--muted)}.dialog-actions{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}.toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,20px);background:var(--text);color:var(--bg);padding:11px 17px;border-radius:12px;font-weight:800;opacity:0;pointer-events:none;transition:.2s;z-index:40;white-space:nowrap}.toast.show{opacity:1;transform:translate(-50%,0)}.leader-row{display:grid;grid-template-columns:35px 1fr auto;gap:9px;align-items:center;padding:10px;border-bottom:1px solid var(--line)}.leader-row:last-child{border:0}.rank{font-weight:900;color:var(--gold)}.empty{text-align:center;padding:20px;color:var(--muted)}.hidden{display:none!important}
+@media(max-width:760px){.layout{grid-template-columns:1fr}.side{grid-template-columns:1fr}.panel{padding:13px}.top{padding:13px 0}.brand h1{font-size:20px}.board{gap:4px;padding:7px}.piece{min-height:82px}.content{margin-top:23px}}@media(min-width:761px){.gamepanel{position:sticky;top:12px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+ <div class="brand"><div class="logo">▦</div><div><h1>BlocZen</h1><small>Le puzzle qui fait travailler vos neurones</small></div></div>
+ <div class="top-actions"><button class="iconbtn" id="soundBtn" aria-label="Activer ou couper le son">🔊</button><button class="iconbtn" id="themeBtn" aria-label="Changer le thème">☀️</button></div>
+</header>
+<div class="ad" id="ad-top">Espace publicitaire</div>
+<main class="layout">
+<section class="panel gamepanel" aria-label="Jeu BlocZen">
+ <div class="gamehead"><div><div class="eyebrow">Votre score</div><div class="score" id="score">0</div></div><div class="best">RECORD PERSONNEL<br><strong id="best">0</strong></div></div>
+ <div class="toolbar"><div class="seg" id="difficulty"><button data-d="easy">Facile</button><button data-d="normal" class="active">Normal</button><button data-d="hard">Difficile</button></div><button class="secondary" id="newGame">↻ Nouvelle partie</button></div>
+ <div class="board" id="board" role="grid" aria-label="Grille de jeu 8 par 8"></div>
+ <div class="pieces" id="pieces" aria-label="Pièces disponibles"></div>
+ <p class="hintline">Touchez une pièce, puis une case de départ sur la grille. Les pièces ne pivotent pas.</p>
+ <div class="reward"><span>🪙 <b id="coins">0</b> pièces</span><button class="secondary" id="saveStatus">Partie sauvegardée</button></div>
+</section>
+<aside class="side">
+ <section class="panel"><div class="section-title"><h2>Votre progression</h2><span class="muted">Statistiques</span></div><div class="stats">
+  <div class="stat"><b id="games">0</b><span>Parties jouées</span></div><div class="stat"><b id="lines">0</b><span>Lignes supprimées</span></div>
+  <div class="stat"><b id="bestRun">0</b><span>Meilleur score</span></div><div class="stat"><b id="totalPoints">0</b><span>Points cumulés</span></div>
+ </div></section>
+ <section class="panel"><div class="section-title"><h2>Défis du jour</h2><span class="muted" id="dayLabel"></span></div><div id="missions"></div></section>
+ <section class="panel"><div class="tabs"><button class="tab active" data-tab="ranking">🏆 Classement</button><button class="tab" data-tab="bonus">✨ Bonus</button></div>
+  <div id="rankingPane"><div class="section-title" style="margin-top:13px"><h2>Vos meilleurs scores</h2><span class="muted">Sur cet appareil</span></div><div id="leaderboard"></div></div>
+  <div id="bonusPane" class="hidden"><div class="section-title" style="margin-top:13px"><h2>Boutique de bonus</h2><span class="muted">Dépensez vos pièces</span></div>
+   <div class="mission"><div class="mission-icon">💡</div><div class="mission-main"><b>Indice de placement</b><small>Montre une position valide pour une pièce</small><br><small>Coût : 15 pièces</small></div><button class="claim" id="buyHint">Acheter</button></div>
+   <div class="mission"><div class="mission-icon">💣</div><div class="mission-main"><b>Nettoyage de ligne</b><small>Efface la ligne la plus remplie</small><br><small>Coût : 30 pièces</small></div><button class="claim" id="buyClear">Acheter</button></div>
+   <p class="muted" style="font-size:12px">Les bonus sont utilisables pendant une partie. Les pièces sont conservées sur cet appareil.</p>
+  </div>
+ </section>
+</aside>
+</main>
+<div class="ad" id="ad-bottom">Espace publicitaire</div>
+<article class="content">
+ <h2>Jouez gratuitement à BlocZen</h2>
+ <p>BlocZen est un jeu de puzzle de blocs gratuit, accessible directement dans votre navigateur sur téléphone, tablette et ordinateur. Placez les pièces sur la grille, complétez des lignes ou des colonnes et essayez d'obtenir le meilleur score possible.</p>
+ <h2>Comment jouer à ce puzzle de blocs ?</h2>
+ <ol><li>Choisissez une pièce parmi les trois proposées sous la grille.</li><li>Touchez une case pour définir le coin supérieur gauche de la pièce.</li><li>Complétez une ligne ou une colonne de huit cases pour la faire disparaître.</li><li>Enchaînez les placements intelligents pour augmenter votre score.</li></ol>
+ <h2>Défis quotidiens et bonus</h2>
+ <p>Chaque jour, de nouveaux objectifs vous invitent à jouer différemment : placer des pièces, marquer des points ou effacer des lignes. Les récompenses permettent d'acheter des aides ponctuelles dans la boutique.</p>
+ <h2>Questions fréquentes</h2>
+ <h3>BlocZen est-il gratuit ?</h3><p>Oui. Le jeu est gratuit et ne demande aucune installation ni inscription.</p>
+ <h3>Ma progression est-elle sauvegardée ?</h3><p>La partie en cours, les records et les statistiques sont sauvegardés dans le stockage local de votre navigateur. Effacer les données du navigateur ou changer d'appareil peut supprimer ou rendre inaccessible cette sauvegarde.</p>
+ <h3>Le classement est-il mondial ?</h3><p>Non. Cette version affiche un classement local sur votre appareil. Un classement mondial nécessite un compte joueur et un service serveur.</p>
+</article>
+<footer class="footer"><span>© <span id="year"></span> BlocZen. Tous droits réservés.</span><span><a href="mailto:contact@VOTRE-DOMAINE.com">Contact</a> · <a href="privacy.html">Confidentialité</a> · <a href="terms.html">Conditions</a></span></footer>
+</div>
+<div class="modal" id="gameOver" role="dialog" aria-modal="true" aria-labelledby="overTitle"><div class="dialog"><h2 id="overTitle">Plus de placement possible</h2><p>Votre score final</p><div class="final" id="finalScore">0</div><p id="recordMessage"></p><div class="dialog-actions"><button class="primary" id="playAgain">Rejouer</button><button class="secondary" id="closeOver">Voir mes statistiques</button></div></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(()=>{'use strict';
+const SIZE=8, COLORS=['#ffc857','#ff7185','#4be0a2','#52d6f4','#a78bfa'];
+const SHAPES=[
+ [[1]],[[1,1]],[[1],[1]],[[1,1,1]],[[1],[1],[1]],[[1,1,1,1]],[[1],[1],[1],[1]],[[1,1],[1,1]],
+ [[1,1,1],[1,1,1],[1,1,1]],[[1,0],[1,0],[1,1]],[[0,1],[0,1],[1,1]],[[1,1,1],[1,0,0]],
+ [[1,1,1],[0,0,1]],[[1,1,0],[0,1,1]],[[0,1,1],[1,1,0]],[[1,1,1],[0,1,0]],
+ [[1,1],[1,0]],[[1,1],[0,1]],[[1,0],[1,1]],[[0,1],[1,1]]
+ ];
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const fresh=()=>({version:2,grid:Array.from({length:SIZE},()=>Array(SIZE).fill(0)),tray:[],score:0,diff:'normal',coins:0,stats:{games:0,lines:0,total:0,best:0},history:[],missions:null,theme:'dark',mute:false,selected:-1,gameActive:true});
+let state=fresh(),audio;
+const today=()=>new Date().toLocaleDateString('en-CA');
+function safeLoad(){try{const x=JSON.parse(localStorage.getItem('bloczen-v2'));if(x&&x.version===2&&Array.isArray(x.grid)&&x.grid.length===SIZE)return {...fresh(),...x,stats:{...fresh().stats,...x.stats}}}catch(e){}return fresh()}
+function save(){try{localStorage.setItem('bloczen-v2',JSON.stringify(state));$('#saveStatus').textContent='✓ Sauvegardé'}catch(e){$('#saveStatus').textContent='Sauvegarde indisponible'}}
+function toast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(()=>t.classList.remove('show'),1800)}
+function sound(freq=440){if(state.mute)return;try{audio=audio||new(window.AudioContext||window.webkitAudioContext)();let o=audio.createOscillator(),g=audio.createGain();o.frequency.value=freq;g.gain.value=.07;o.connect(g);g.connect(audio.destination);o.start();g.gain.exponentialRampToValueAtTime(.001,audio.currentTime+.12);o.stop(audio.currentTime+.12)}catch(e){}}
+function randomPiece(){let pool=SHAPES;if(state.diff==='easy')pool=SHAPES.filter((_,i)=>![8,13,14,15,11,12].includes(i));return {shape:pool[Math.floor(Math.random()*pool.length)],color:Math.floor(Math.random()*COLORS.length)}}
+function fits(piece,r,c){for(let y=0;y<piece.shape.length;y++)for(let x=0;x<piece.shape[y].length;x++)if(piece.shape[y][x]){let R=r+y,C=c+x;if(R<0||C<0||R>=SIZE||C>=SIZE||state.grid[R][C])return false}return true}
+function canAny(piece){for(let r=0;r<SIZE;r++)for(let c=0;c<SIZE;c++)if(fits(piece,r,c))return true;return false}
+function deal(){let batch;for(let k=0;k<40;k++){batch=[randomPiece(),randomPiece(),randomPiece()];if(state.diff==='hard'||batch.some(canAny))break}state.tray=batch;state.selected=-1}
+function drawBoard(){const board=$('#board');board.innerHTML='';for(let r=0;r<SIZE;r++)for(let c=0;c<SIZE;c++){let d=document.createElement('button');d.type='button';d.className='cell'+(state.grid[r][c]?' filled':'');d.dataset.r=r;d.dataset.c=c;d.setAttribute('aria-label',`Ligne ${r+1}, colonne ${c+1}${state.grid[r][c]?', occupée':', vide'}`);if(state.grid[r][c])d.style.background=COLORS[state.grid[r][c]-1];d.addEventListener('click',()=>tryPlace(r,c));board.appendChild(d)}}
+function drawPieces(){const box=$('#pieces');box.innerHTML='';state.tray.forEach((p,i)=>{let el=document.createElement('button');el.type='button';el.className='piece'+(!p?' used':'')+(state.selected===i?' selected':'');el.setAttribute('aria-label',`Sélectionner la pièce ${i+1}`);if(p){let m=document.createElement('span');m.className='mini';m.style.gridTemplateColumns=`repeat(${p.shape[0].length},auto)`;p.shape.forEach(row=>row.forEach(v=>{let b=document.createElement('i');if(v)b.style.background=COLORS[p.color];else b.className='empty';m.appendChild(b)}));el.appendChild(m);el.addEventListener('click',()=>{state.selected=state.selected===i?-1:i;drawPieces();sound(520)})}box.appendChild(el)})}
+function render(){drawBoard();drawPieces();$('#score').textContent=state.score;$('#best').textContent=state.stats.best;$('#coins').textContent=state.coins;$('#games').textContent=state.stats.games;$('#lines').textContent=state.stats.lines;$('#bestRun').textContent=state.stats.best;$('#totalPoints').textContent=state.stats.total;$('#themeBtn').textContent=state.theme==='dark'?'☀️':'🌙';$('#soundBtn').textContent=state.mute?'🔇':'🔊';document.documentElement.dataset.theme=state.theme;$$('#difficulty button').forEach(b=>b.classList.toggle('active',b.dataset.d===state.diff));renderMissions();renderLeaderboard();save()}
+function clearLines(){let rows=[],cols=[];for(let r=0;r<SIZE;r++)if(state.grid[r].every(Boolean))rows.push(r);for(let c=0;c<SIZE;c++)if(state.grid.every(row=>row[c]))cols.push(c);let count=rows.length+cols.length;if(count){rows.forEach(r=>state.grid[r].fill(0));cols.forEach(c=>{for(let r=0;r<SIZE;r++)state.grid[r][c]=0});state.score+=count*count*10;state.stats.lines+=count;state.coins+=count*3;updateMission('lines',count);sound(760)}return count}
+function tryPlace(r,c){let i=state.selected;if(i<0||!state.tray[i]){toast('Choisissez d’abord une pièce');return}let p=state.tray[i];if(!fits(p,r,c)){toast('Cette pièce ne rentre pas ici');sound(130);return}let n=0;p.shape.forEach((row,y)=>row.forEach((v,x)=>{if(v){state.grid[r+y][c+x]=p.color+1;n++}}));state.score+=n;state.stats.total+=n;state.tray[i]=null;state.selected=-1;updateMission('placed',1);updateMission('points',n);clearLines();state.coins+=Math.floor(n/4);if(state.score>state.stats.best){state.stats.best=state.score}sound(300);if(state.tray.every(x=>!x))deal();render();if(!state.tray.some(x=>x&&canAny(x)))finish()}
+function finish(){state.gameActive=false;state.stats.games++;state.history.unshift({score:state.score,date:today(),diff:state.diff});state.history=state.history.slice(0,10);state.coins+=Math.floor(state.score/25);$('#finalScore').textContent=state.score;$('#recordMessage').textContent=state.score>=state.stats.best?'Nouveau record personnel !':'Continuez à progresser pour battre votre record.';$('#gameOver').classList.add('show');render();save()}
+function startGame(){state.grid=Array.from({length:SIZE},()=>Array(SIZE).fill(0));state.score=0;state.gameActive=true;deal();$('#gameOver').classList.remove('show');render()}
+function newMissionSet(){return {date:today(),items:[{id:'placed',name:'Posez 12 pièces',goal:12,progress:0,reward:15,icon:'🧩',claimed:false},{id:'lines',name:'Effacez 3 lignes',goal:3,progress:0,reward:20,icon:'✨',claimed:false},{id:'points',name:'Marquez 100 points',goal:100,progress:0,reward:25,icon:'🎯',claimed:false}]}}
+function missions(){if(!state.missions||state.missions.date!==today())state.missions=newMissionSet();return state.missions}
+function updateMission(id,n){missions().items.forEach(m=>{if(m.id===id)m.progress=Math.min(m.goal,m.progress+n)})}
+function renderMissions(){$('#dayLabel').textContent=new Date().toLocaleDateString('fr-FR',{day:'2-digit',month:'short'});$('#missions').innerHTML='';missions().items.forEach(m=>{let row=document.createElement('div');row.className='mission';let pct=Math.min(100,m.progress/m.goal*100);row.innerHTML=`<div class="mission-icon">${m.icon}</div><div class="mission-main"><b>${m.name}</b><small>${m.progress}/${m.goal} · Récompense : ${m.reward} pièces</small><div class="progress"><i style="width:${pct}%"></i></div></div>`;let b=document.createElement('button');b.className='claim';b.textContent=m.claimed?'Reçu':m.progress>=m.goal?'Réclamer':'En cours';b.disabled=m.claimed||m.progress<m.goal;b.addEventListener('click',()=>{m.claimed=true;state.coins+=m.reward;toast(`+${m.reward} pièces !`);render()});row.appendChild(b);$('#missions').appendChild(row)})}
+function renderLeaderboard(){let el=$('#leaderboard');el.innerHTML='';let arr=[...state.history];if(state.score>0)arr.push({score:state.score,date:today(),diff:state.diff});arr.sort((a,b)=>b.score-a.score);arr=arr.slice(0,10);if(!arr.length){el.innerHTML='<div class="empty">Vos scores apparaîtront ici après votre première partie.</div>';return}arr.forEach((x,i)=>{let row=document.createElement('div');row.className='leader-row';row.innerHTML=`<span class="rank">#${i+1}</span><span><b>${x.score} pts</b><br><small class="muted">${x.date} · ${x.diff}</small></span><span>🏅</span>`;el.appendChild(row)})}
+function buy(type){let cost=type==='hint'?15:30;if(state.coins<cost){toast('Pas assez de pièces');return}if(!state.gameActive){toast('Lancez une partie avant');return}if(type==='hint'){let idx=state.selected;if(idx<0||!state.tray[idx]){toast('Sélectionnez une pièce avant l’indice');return}let found=null;for(let r=0;r<SIZE&&!found;r++)for(let c=0;c<SIZE&&!found;c++)if(fits(state.tray[idx],r,c))found={r,c};if(!found){toast('Aucun placement possible');return}state.coins-=cost;state.selected=-1;render();let cell=$(`.cell[data-r="${found.r}"][data-c="${found.c}"]`);cell?.classList.add('hint');toast(`Essayez à la ligne ${found.r+1}, colonne ${found.c+1}`)}else{let bestRow=-1,bestCount=0;for(let r=0;r<SIZE;r++){let n=state.grid[r].filter(Boolean).length;if(n>bestCount){bestCount=n;bestRow=r}}if(bestRow<0||bestCount===0){toast('Aucune ligne à nettoyer');return}state.coins-=cost;state.grid[bestRow].fill(0);state.score+=10;toast('Ligne nettoyée !');render()}save()}
+$('#newGame').addEventListener('click',()=>{if(state.gameActive&&state.score>0&&!confirm('Commencer une nouvelle partie ? La partie actuelle sera terminée.'))return;startGame()});
+$('#playAgain').addEventListener('click',startGame);$('#closeOver').addEventListener('click',()=>$('#gameOver').classList.remove('show'));
+$('#themeBtn').addEventListener('click',()=>{state.theme=state.theme==='dark'?'light':'dark';render()});$('#soundBtn').addEventListener('click',()=>{state.mute=!state.mute;render();sound()});
+$('#difficulty').addEventListener('click',e=>{let b=e.target.closest('button[data-d]');if(!b)return;if(state.gameActive&&state.score>0&&!confirm('Changer de difficulté et recommencer ?'))return;state.diff=b.dataset.d;startGame()});
+$('#buyHint').addEventListener('click',()=>buy('hint'));$('#buyClear').addEventListener('click',()=>buy('clear'));
+$$('.tab').forEach(b=>b.addEventListener('click',()=>{$$('.tab').forEach(x=>x.classList.toggle('active',x===b));$('#rankingPane').classList.toggle('hidden',b.dataset.tab!=='ranking');$('#bonusPane').classList.toggle('hidden',b.dataset.tab!=='bonus')}));
+$('#year').textContent=new Date().getFullYear();
+state=safeLoad();if(!Array.isArray(state.tray)||state.tray.length!==3)deal();if(!state.missions||state.missions.date!==today())state.missions=newMissionSet();render();
+if(!state.gameActive)startGame();
+window.addEventListener('beforeunload',save);
+})();
+</script>
+</body>
+</html>
